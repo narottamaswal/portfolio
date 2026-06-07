@@ -1,0 +1,171 @@
+.edu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.edu-card {
+  border: 1px solid var(--color-border);
+  border-left: 4px solid var(--accent);
+  padding: 20px 22px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(79,70,229,0.05);
+}
+
+.edu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.edu-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.edu-logo-wrap {
+  flex-shrink: 0;
+}
+
+.edu-logo {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  border-radius: 4px;
+  border: 1px solid var(--color-border);
+  padding: 2px;
+  background: #fff;
+}
+
+.edu-icon {
+  width: 42px;
+  height: 42px;
+  background: var(--accent-light);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.edu-degree {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 3px;
+  color: var(--color-text);
+}
+
+.edu-institution {
+  font-size: 0.875rem;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.edu-meta {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-end;
+}
+
+.edu-year {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent-cyan);
+  background: #CFFAFE;
+  padding: 2px 10px;
+  border-radius: 99px;
+}
+
+.edu-grade {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--accent-green);
+  font-weight: 600;
+  background: #D1FAE5;
+  padding: 2px 10px;
+  border-radius: 99px;
+}
+
+.edu-details {
+  font-size: 0.85rem;
+  color: #555;
+  line-height: 1.6;
+  padding-left: 54px;
+}
+
+@media (max-width: 600px) {
+  .edu-meta {
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .edu-details {
+    padding-left: 0;
+  }
+}
+
+
+.edu-card {
+  border: 1px solid var(--color-border);
+  padding: 18px 22px;
+  background: #fff;
+}
+
+.edu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.edu-degree {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.edu-institution {
+  font-size: 0.875rem;
+  color: #444;
+}
+
+.edu-meta {
+  text-align: right;
+}
+
+.edu-year {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.edu-grade {
+  display: block;
+  font-size: 0.78rem;
+  color: #777;
+  margin-top: 2px;
+}
+
+.edu-details {
+  font-size: 0.85rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .edu-meta {
+    text-align: left;
+  }
+}

@@ -1,0 +1,42 @@
+<section id="experience">
+  <div class="section-container">
+    <h2 class="section-title">Work Experience</h2>
+    <div class="timeline">
+      <div
+        class="timeline-item reveal"
+        appScrollReveal
+        *ngFor="let job of experience; let i = index"
+        [class.right]="i % 2 !== 0"
+      >
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="card-header">
+            <div class="company-info">
+              <img
+                *ngIf="job.logo"
+                [src]="job.logo"
+                [alt]="job.company"
+                class="company-logo"
+                (error)="onLogoError($event)"
+              />
+              <div>
+                <p class="company-name">{{ job.company }}</p>
+                <p class="company-role">{{ job.role }}</p>
+              </div>
+            </div>
+            <div class="card-meta">
+              <span class="duration">{{ job.duration }}</span>
+              <span class="location">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                {{ job.location }}
+              </span>
+            </div>
+          </div>
+          <ul class="bullet-list">
+            <li *ngFor="let bullet of job.bullets">{{ bullet }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

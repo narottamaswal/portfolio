@@ -1,0 +1,35 @@
+<section id="education" class="alt-bg">
+  <div class="section-container">
+    <h2 class="section-title">Education</h2>
+    <div class="edu-list">
+      <div class="edu-card reveal" appScrollReveal *ngFor="let edu of education">
+        <div class="edu-header">
+          <div class="edu-left">
+            <div class="edu-logo-wrap" *ngIf="edu.logo; else gradIcon">
+              <img [src]="edu.logo" [alt]="edu.institution" class="edu-logo" (error)="onLogoError($event)" />
+            </div>
+            <ng-template #gradIcon>
+              <div class="edu-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                  <path d="M6 12v5c0 1.657 2.686 3 6 3s6-1.343 6-3v-5"/>
+                </svg>
+              </div>
+            </ng-template>
+            <div>
+              <p class="edu-degree">{{ edu.degree }}</p>
+              <p class="edu-institution">{{ edu.institution }}</p>
+            </div>
+          </div>
+          <div class="edu-meta">
+            <span class="edu-year">{{ edu.year }}</span>
+            <span class="edu-grade" *ngIf="edu.grade">🎓 {{ edu.grade }}</span>
+          </div>
+        </div>
+        <p class="edu-details" *ngIf="edu.details">{{ edu.details }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+

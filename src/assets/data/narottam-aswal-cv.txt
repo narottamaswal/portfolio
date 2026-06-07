@@ -1,0 +1,13 @@
+Narottam Aswal - CV (Placeholder)
+
+This is a downloadable placeholder CV file for the portfolio website.
+Replace this file with your final PDF resume and update personal.cvUrl in src/assets/data/portfolio2.json.
+
+Name: Narottam Aswal
+Title: Analyst | Senior Software Engineer
+Location: Mumbai, Maharashtra, India
+Email: narottamaswalwork@gmail.com
+LinkedIn: https://linkedin.com/in/narottamaswal
+GitHub: https://github.com/narottamaswal
+LeetCode: https://leetcode.com/narottamaswal/
+

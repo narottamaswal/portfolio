@@ -1,0 +1,31 @@
+<nav class="navbar">
+  <div class="nav-inner">
+    <span class="nav-brand">{{ name }}</span>
+
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+      <li><a href="#recommendations">Recommendations</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#notes">Notes</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+
+    <button class="menu-toggle" (click)="toggleMenu()" aria-label="Toggle menu">&#9776;</button>
+  </div>
+
+  <ul class="nav-mobile" [class.open]="menuOpen">
+    <li><a href="#about" (click)="closeMenu()">About</a></li>
+    <li><a href="#skills" (click)="closeMenu()">Skills</a></li>
+    <li><a href="#experience" (click)="closeMenu()">Experience</a></li>
+    <li><a href="#education" (click)="closeMenu()">Education</a></li>
+    <li><a href="#projects" (click)="closeMenu()">Projects</a></li>
+    <li><a href="#achievements" (click)="closeMenu()">Achievements</a></li>
+    <li><a href="#recommendations" (click)="closeMenu()">Recommendations</a></li>
+    <li><a href="#notes" (click)="closeMenu()">Notes</a></li>
+    <li><a href="#contact" (click)="closeMenu()">Contact</a></li>
+  </ul>
+</nav>

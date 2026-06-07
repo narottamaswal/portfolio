@@ -1,0 +1,212 @@
+{
+  "personal": {
+    "name": "Rahul Sharma",
+    "title": "Senior Software Engineer",
+    "summary": "7+ years building distributed systems, microservices, and data platforms at scale. Experienced across the full stack with a focus on backend engineering, cloud infrastructure, and engineering best practices. Based in Mumbai — building things that work in production.",
+    "location": "Mumbai, Maharashtra, India",
+    "email": "rahul.sharma@example.com",
+    "phone": "+91 98765 43210",
+    "linkedin": "https://linkedin.com/in/rahulsharma",
+    "github": "https://github.com/rahulsharma",
+    "medium": "https://medium.com/@rahulsharma",
+    "heroImage": "https://images.unsplash.com/photo-1529253355930-ddbe423a2ac7?w=480&q=70"
+  },
+
+  "skills": [
+    { "category": "Languages", "items": ["Java", "Python", "TypeScript", "Go", "SQL", "Bash"] },
+    { "category": "Frameworks & Libraries", "items": ["Spring Boot", "Node.js", "Angular", "FastAPI", "Hibernate", "React"] },
+    { "category": "Databases", "items": ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Elasticsearch", "Cassandra"] },
+    { "category": "Cloud & DevOps", "items": ["AWS (EC2, S3, RDS, Lambda, EKS)", "Docker", "Kubernetes", "Terraform", "Jenkins", "GitHub Actions"] },
+    { "category": "Messaging & Streaming", "items": ["Apache Kafka", "RabbitMQ", "AWS SQS/SNS"] },
+    { "category": "Practices", "items": ["System Design", "Microservices", "REST API Design", "TDD", "CI/CD", "Code Review", "Agile/Scrum"] }
+  ],
+
+  "education": [
+    {
+      "degree": "B.E. in Computer Engineering",
+      "institution": "University of Mumbai",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/University_of_Mumbai.svg/120px-University_of_Mumbai.svg.png",
+      "year": "2014 – 2018",
+      "grade": "8.4 / 10 CGPA",
+      "details": "Relevant coursework: Data Structures, Operating Systems, DBMS, Computer Networks, Compiler Design"
+    }
+  ],
+
+  "experience": [
+    {
+      "company": "Tata Consultancy Services",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Tata_Consultancy_Services_Logo.svg/200px-Tata_Consultancy_Services_Logo.svg.png",
+      "role": "Senior Software Engineer",
+      "duration": "Aug 2022 – Present",
+      "location": "Mumbai",
+      "bullets": [
+        "Architected a real-time event-driven order processing system using Kafka and Spring Boot, reducing processing latency from 800ms to under 120ms for 2M+ daily transactions.",
+        "Led migration of 6 legacy monolithic services to containerized microservices on AWS EKS, reducing deployment time by 70% and infrastructure cost by 35%.",
+        "Designed and implemented a multi-tenant reporting API serving 50+ enterprise clients; introduced Redis caching layer that cut average response time from 3.2s to 320ms.",
+        "Mentored 4 junior engineers through code reviews, pair programming sessions, and bi-weekly technical discussions on system design and clean code principles.",
+        "Established CI/CD pipelines using Jenkins and GitHub Actions with automated integration test gates, reducing production incidents by 40%."
+      ]
+    },
+    {
+      "company": "Infosys",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Infosys_logo.svg/200px-Infosys_logo.svg.png",
+      "role": "Software Engineer",
+      "duration": "Jun 2020 – Jul 2022",
+      "location": "Pune",
+      "bullets": [
+        "Built RESTful APIs for a core banking platform handling ₹500Cr+ in daily transactions, following OpenAPI 3.0 specifications with strict SLA compliance.",
+        "Implemented a configurable rule-engine for fraud detection in Python, integrating with an ML scoring model; reduced false-positive alerts by 28%.",
+        "Migrated batch ETL jobs from PL/SQL procedures to Apache Spark pipelines on AWS EMR, cutting nightly processing time from 6 hours to 45 minutes.",
+        "Owned database performance: identified and resolved 15+ slow query patterns via execution plan analysis, contributing to a 60% reduction in DB CPU utilization."
+      ]
+    },
+    {
+      "company": "Wipro",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Wipro_Primary_Logo_Color_RGB.svg/200px-Wipro_Primary_Logo_Color_RGB.svg.png",
+      "role": "Associate Software Engineer",
+      "duration": "Jul 2018 – May 2020",
+      "location": "Mumbai",
+      "bullets": [
+        "Developed REST APIs and internal microservices using Spring Boot for a logistics tracking platform, integrating with 3rd-party courier APIs.",
+        "Wrote JUnit and Mockito test suites achieving 82% code coverage on critical service modules; contributed to reducing regression bug count by 50%.",
+        "Collaborated with cross-functional teams across Mumbai and Bangalore on Agile sprints, participating in sprint planning, standups, and retrospectives."
+      ]
+    }
+  ],
+
+  "projects": [
+    {
+      "title": "Distributed Rate Limiter",
+      "description": "A library implementing token bucket and sliding-window rate limiting algorithms backed by Redis. Supports per-user, per-IP, and global rate limiting with atomic Lua scripts to prevent race conditions under high concurrency.",
+      "tech": ["Java", "Redis", "Spring Boot", "Lua"],
+      "github": "https://github.com/rahulsharma/rate-limiter",
+      "image": "https://placehold.co/600x280/1e1b4b/a5b4fc?text=Rate+Limiter+%E2%80%94+Redis+%2B+Spring+Boot"
+    },
+    {
+      "title": "Real-Time Analytics Pipeline",
+      "description": "End-to-end streaming pipeline ingesting clickstream events via Kafka, aggregating with Kafka Streams, and writing materialized views to PostgreSQL. Includes a Grafana dashboard for live monitoring of funnel metrics.",
+      "tech": ["Kafka", "Kafka Streams", "PostgreSQL", "Grafana", "Docker"],
+      "github": "https://github.com/rahulsharma/analytics-pipeline",
+      "image": "https://placehold.co/600x280/052e16/6ee7b7?text=Analytics+Pipeline+%E2%80%94+Kafka+%2B+Grafana"
+    },
+    {
+      "title": "URL Shortener Service",
+      "description": "High-throughput URL shortener handling 10K+ req/sec. Uses Base62 encoding, Redis for hot-link caching, PostgreSQL for persistence, and a separate analytics service that tracks click metadata asynchronously via a message queue.",
+      "tech": ["Go", "Redis", "PostgreSQL", "RabbitMQ"],
+      "github": "https://github.com/rahulsharma/url-shortener",
+      "image": "https://placehold.co/600x280/0c1445/93c5fd?text=URL+Shortener+%E2%80%94+Go+%2B+Redis"
+    },
+    {
+      "title": "Multi-Tenant SaaS Boilerplate",
+      "description": "Production-ready Spring Boot boilerplate with JWT auth, role-based access control, multi-tenancy via schema-per-tenant PostgreSQL isolation, audit logging, and Swagger docs.",
+      "tech": ["Spring Boot", "PostgreSQL", "JWT", "Docker", "Flyway"],
+      "github": "https://github.com/rahulsharma/saas-boilerplate",
+      "image": "https://placehold.co/600x280/1c1917/fbbf24?text=SaaS+Boilerplate+%E2%80%94+Spring+Boot"
+    },
+    {
+      "title": "CLI Infrastructure Auditor",
+      "description": "A Python CLI tool that audits AWS accounts for common security misconfigurations — open S3 buckets, unrestricted security groups, unencrypted EBS volumes — and generates a prioritized HTML report with remediation steps.",
+      "tech": ["Python", "boto3", "AWS", "Click", "Jinja2"],
+      "github": "https://github.com/rahulsharma/aws-auditor",
+      "image": "https://placehold.co/600x280/1a0a00/fb923c?text=AWS+Infra+Auditor+%E2%80%94+CLI+Tool"
+    },
+    {
+      "title": "Portfolio CMS API",
+      "description": "A headless CMS API built with FastAPI that powers this portfolio. Provides CRUD endpoints for all portfolio sections with JWT admin auth, PostgreSQL persistence, and a simple admin UI for content updates without redeployment.",
+      "tech": ["FastAPI", "PostgreSQL", "JWT", "SQLAlchemy", "Python"],
+      "github": "https://github.com/rahulsharma/portfolio-api",
+      "link": "https://portfolio-api.example.com/docs",
+      "image": "https://placehold.co/600x280/0f172a/38bdf8?text=Portfolio+CMS+API+%E2%80%94+FastAPI+Docs"
+    }
+  ],
+
+  "achievements": [
+    {
+      "title": "AWS Certified Solutions Architect – Associate",
+      "description": "Passed SAA-C03 with a score of 882/1000. Validated expertise in designing fault-tolerant, cost-effective architectures on AWS.",
+      "year": "2023"
+    },
+    {
+      "title": "Internal Hackathon Winner — TCS InnoJam 2023",
+      "description": "Led a team of 4 to build an AI-powered incident triage tool in 24 hours. Won first place out of 38 participating teams across the Mumbai delivery unit.",
+      "year": "2023"
+    },
+    {
+      "title": "Open Source Contributor — Spring Framework",
+      "description": "Contributed a bug fix and documentation improvements to the spring-data-redis project. PR merged in v3.1.2 release.",
+      "year": "2023"
+    },
+    {
+      "title": "Best Performer Award — Infosys Q3 2021",
+      "description": "Recognised for owning and delivering the fraud detection module ahead of schedule with zero post-release defects over a 6-month observation window.",
+      "year": "2021"
+    },
+    {
+      "title": "Competitive Programming — CodeChef 4★",
+      "description": "Maintained a 4-star rating on CodeChef with 1800+ rating. Participated in 30+ long-challenge and cook-off rounds.",
+      "year": "2019 – 2021"
+    }
+  ],
+
+  "recommendations": [
+    {
+      "name": "Priya Menon",
+      "title": "Engineering Manager",
+      "company": "Tata Consultancy Services",
+      "avatar": "https://i.pravatar.cc/80?img=47",
+      "text": "Rahul consistently stands out for his deep technical ownership. He doesn't just implement what's asked — he proactively identifies edge cases, documents decisions, and sets the bar for how backend engineering should be done in our team. He's been instrumental in our Kafka migration and I would recommend him without hesitation.",
+      "linkedinUrl": "https://linkedin.com/in/priyamenon"
+    },
+    {
+      "name": "Vikram Patel",
+      "title": "Principal Engineer",
+      "company": "Infosys",
+      "avatar": "https://i.pravatar.cc/80?img=12",
+      "text": "I worked closely with Rahul on the core banking APIs and was impressed by his ability to navigate complex systems quickly and deliver clean, testable code under tight deadlines. His database optimisation work single-handedly prevented a performance escalation that would have been very costly.",
+      "linkedinUrl": "https://linkedin.com/in/vikrampatel"
+    },
+    {
+      "name": "Ananya Krishnan",
+      "title": "Tech Lead",
+      "company": "Wipro",
+      "avatar": "https://i.pravatar.cc/80?img=32",
+      "text": "Rahul was the most technically curious person on my team. He took time to understand the why behind every design decision and brought that same rigour to his own work. Within a year he was effectively leading features end-to-end.",
+      "linkedinUrl": "https://linkedin.com/in/ananyakrishnan"
+    }
+  ],
+
+  "notes": [
+    {
+      "title": "Why I stopped writing clever code",
+      "date": "Jan 2025",
+      "summary": "A reflection on readability vs cleverness after a late-night debugging session on code I wrote 18 months earlier. Spoiler: my past self was not as smart as he thought.",
+      "tags": ["engineering", "clean code"],
+      "link": "https://medium.com/@rahulsharma"
+    },
+    {
+      "title": "Kafka consumer lag is not always what you think",
+      "date": "Oct 2024",
+      "summary": "Notes from diagnosing a consumer group that showed 2M messages of lag but was processing just fine. Turned out to be a partition rebalance issue masking the real metric.",
+      "tags": ["kafka", "distributed systems"]
+    },
+    {
+      "title": "On mentoring junior engineers",
+      "date": "Aug 2024",
+      "summary": "What I've learned after mentoring four engineers over the past two years. The biggest mistake is giving answers too quickly. The second biggest is not giving them at all.",
+      "tags": ["mentorship", "team"]
+    },
+    {
+      "title": "Redis as a rate limiter — a practical guide",
+      "date": "May 2024",
+      "summary": "A walkthrough of implementing sliding-window rate limiting in Redis using Lua scripts. Covers atomic execution, TTL management, and testing under concurrent load.",
+      "tags": ["redis", "system design"],
+      "link": "https://medium.com/@rahulsharma"
+    },
+    {
+      "title": "The cost of premature abstraction",
+      "date": "Feb 2024",
+      "summary": "How a well-intentioned generic framework added 3 weeks of onboarding time for every new engineer. Sometimes the boring direct approach is the right one.",
+      "tags": ["architecture", "engineering"]
+    }
+  ]
+}

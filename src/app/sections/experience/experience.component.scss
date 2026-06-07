@@ -1,0 +1,283 @@
+.timeline {
+  position: relative;
+  padding: 4px 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, var(--accent) 0%, var(--accent-cyan) 100%);
+    transform: translateX(-50%);
+  }
+}
+
+.timeline-item {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: calc(50% + 28px);
+  margin-bottom: 36px;
+  position: relative;
+
+  &.right {
+    justify-content: flex-start;
+    padding-right: 0;
+    padding-left: calc(50% + 28px);
+  }
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  width: 12px;
+  height: 12px;
+  background: var(--accent);
+  border-radius: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  box-shadow: 0 0 0 3px var(--accent-light);
+}
+
+.timeline-card {
+  border: 1px solid var(--color-border);
+  border-top: 3px solid var(--accent);
+  padding: 18px 22px;
+  width: 100%;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(79,70,229,0.06);
+  transition: box-shadow 0.2s;
+
+  &:hover {
+    box-shadow: 0 4px 18px rgba(79,70,229,0.12);
+  }
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+
+.company-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.company-logo {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid var(--color-border);
+  padding: 2px;
+  background: #fff;
+}
+
+.company-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+  color: var(--accent);
+}
+
+.company-role {
+  font-size: 0.85rem;
+  color: #444;
+  font-weight: 500;
+}
+
+.card-meta {
+  text-align: right;
+}
+
+.duration {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent-cyan);
+  background: #CFFAFE;
+  padding: 2px 8px;
+  border-radius: 99px;
+  margin-bottom: 4px;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 3px;
+  font-size: 0.75rem;
+  color: #888;
+  margin-top: 2px;
+}
+
+.bullet-list {
+  padding-left: 17px;
+
+  li {
+    font-size: 0.875rem;
+    color: #333;
+    line-height: 1.65;
+    margin-bottom: 7px;
+
+    &::marker { color: var(--accent); }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 12px;
+  }
+
+  .timeline-item,
+  .timeline-item.right {
+    padding-left: 36px;
+    padding-right: 0;
+    justify-content: flex-start;
+  }
+
+  .timeline-dot {
+    left: 12px;
+  }
+
+  .card-meta {
+    text-align: left;
+  }
+
+  .duration { display: inline-block; }
+  .location { justify-content: flex-start; }
+}
+
+
+.timeline-item {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: calc(50% + 28px);
+  margin-bottom: 36px;
+  position: relative;
+
+  &.right {
+    justify-content: flex-start;
+    padding-right: 0;
+    padding-left: calc(50% + 28px);
+  }
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  width: 10px;
+  height: 10px;
+  background: var(--color-text);
+  border-radius: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.timeline-card {
+  border: 1px solid var(--color-border);
+  padding: 18px 22px;
+  width: 100%;
+  background: #fff;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+
+.company-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.company-logo {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.company-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.company-role {
+  font-size: 0.85rem;
+  color: #444;
+}
+
+.card-meta {
+  text-align: right;
+}
+
+.duration {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.location {
+  display: block;
+  font-size: 0.75rem;
+  color: #888;
+  margin-top: 2px;
+}
+
+.bullet-list {
+  padding-left: 17px;
+
+  li {
+    font-size: 0.875rem;
+    color: #333;
+    line-height: 1.65;
+    margin-bottom: 7px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 12px;
+  }
+
+  .timeline-item,
+  .timeline-item.right {
+    padding-left: 36px;
+    padding-right: 0;
+    justify-content: flex-start;
+  }
+
+  .timeline-dot {
+    left: 12px;
+  }
+
+  .card-meta {
+    text-align: left;
+  }
+}

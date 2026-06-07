@@ -1,0 +1,20 @@
+<div *ngIf="loading" class="state-loading">Loading...</div>
+
+<div *ngIf="error" class="state-error">
+  <p>Could not load portfolio data. Check the API URL in <code>portfolio.service.ts</code>.</p>
+</div>
+
+<ng-container *ngIf="portfolio">
+  <app-navbar [name]="portfolio.personal.name" />
+  <main>
+    <app-intro [personal]="portfolio.personal" />
+    <app-experience [experience]="portfolio.experience" />
+    <app-projects [projects]="portfolio.projects" />
+    <app-skills [skills]="portfolio.skills" />
+    <app-education [education]="portfolio.education" />
+    <app-recommendations [recommendations]="portfolio.recommendations" />
+    <app-achievements [achievements]="portfolio.achievements" />
+    <app-notes [notes]="portfolio.notes" />
+    <app-contact [personal]="portfolio.personal" />
+  </main>
+</ng-container>

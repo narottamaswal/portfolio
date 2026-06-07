@@ -1,0 +1,208 @@
+{
+  "personal": {
+    "name": "Narottam Aswal",
+    "title": "Analyst | Senior Software Engineer",
+    "summary": "Software engineer with 4+ years of experience building microservices, full-stack applications, and cloud-native systems. Experienced across Spring Boot, Angular, and cloud infrastructure with a strong focus on delivery ownership, security, and performance. Based in Mumbai — shipping things that work end-to-end in production.",
+    "location": "Mumbai, Maharashtra, India",
+    "email": "narottamaswalwork@gmail.com",
+    "phone": "+91 98678 93889",
+    "linkedin": "https://linkedin.com/in/narottamaswal",
+    "github": "https://github.com/narottamaswal",
+    "medium": "https://medium.com/@narottamaswal",
+    "leetcode": "https://leetcode.com/narottam_aswal/",
+    "cvUrl": "assets/data/narottam-aswal-cv.txt",
+    "heroImage": "https://images.unsplash.com/photo-1529253355930-ddbe423a2ac7?w=480&q=70",
+    "heroImages": [
+      "assets/data/profile.png",
+      "assets/data/myphoto2.jpg",
+      "https://images.unsplash.com/photo-1529253355930-ddbe423a2ac7?w=480&q=70",
+      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=480&q=70"
+    ]
+  },
+
+  "skills": [
+    { "category": "Languages", "items": ["Java", "C++", "HTML", "CSS", "SQL"] },
+    { "category": "Frameworks & Libraries", "items": ["Spring Boot", "Spring Cloud", "Angular", "Hibernate", "JPA", "Kafka", "Generics", "Collections"] },
+    { "category": "Architectures & Tools", "items": ["REST", "Microservices", "JWT", "RBAC", "MVC", "DynamoDB", "Linux", "Software Design"] },
+    { "category": "Cloud & DevOps", "items": ["AWS", "S3", "Docker", "Jenkins", "Gradle", "Nginx", "Tomcat"] },
+    { "category": "Developer Tools", "items": ["Git", "MySQL", "PostgreSQL", "NPM", "Mockoon", "Log4j2"] },
+    { "category": "Practices", "items": ["Microservices", "TDD", "AGILE", "CI/CD", "Code Review", "System Design"] }
+  ],
+
+  "education": [
+    {
+      "degree": "Master of Computer Applications (M.C.A)",
+      "institution": "Vivekanand Education Society's Institute of Technology",
+      "year": "October 2020 – July 2022",
+      "grade": "9.8 CGPA",
+      "details": ""
+    },
+    {
+      "degree": "Bachelor of Science in Information Technology (BSc. I.T.)",
+      "institution": "DG Ruparel College of Arts, Science and Commerce",
+      "year": "July 2017 – September 2020",
+      "grade": "8.9 CGPA",
+      "details": ""
+    }
+  ],
+
+  "experience": [
+    {
+      "company": "ISS Stoxx",
+      "logo": "",
+      "role": "Analyst",
+      "duration": "July 2024 – Present",
+      "location": "Mumbai, India (Onsite)",
+      "bullets": [
+        "Led cross-functional teams delivering Spring Boot & Angular applications across reporting, auth, security, and performance domains with end-to-end delivery and support.",
+        "Built microservices using Spring Cloud modules (Config, Eureka, Gateway) for efficient inter-service communication and performance.",
+        "Migrated and re-designed the corporate website with data ingestion, validation, multi-host UI, and SEO optimisation.",
+        "Rebuilt Jenkins CI/CD pipeline eliminating manual SSH deployments and introducing parameterized versioning, boosting overall team productivity.",
+        "Empowered team through collaborative code reviews, technical goal guidance, and Gradle pipeline improvements."
+      ]
+    },
+    {
+      "company": "PayNearby",
+      "logo": "",
+      "role": "Senior Software Engineer",
+      "duration": "January 2022 – June 2024",
+      "location": "Mumbai, India (Office)",
+      "bullets": [
+        "Architected and delivered solutions across insurance, customer, and inventory verticals, owning the full delivery lifecycle end-to-end.",
+        "Designed core MySQL schema with relational models, indexing, and query optimisations as the data foundation for multiple downstream applications.",
+        "Migrated legacy monolith modules to independently deployable microservices using Spring Boot, Jenkins, and Docker.",
+        "Integrated S3 and DynamoDB for scalable object storage and high-performance NoSQL data persistence and retrieval.",
+        "Built wrapper services and integration modules for Yes Bank and insurance vendor APIs, enabling reliable payment and insurance flows.",
+        "Implemented AGILE and TDD practices for development, testing, and support; resolved Sonar issues to improve overall code quality."
+      ]
+    },
+    {
+      "company": "Saasific",
+      "logo": "",
+      "role": "Full stack development intern",
+      "duration": "June 2021 – August 2021",
+      "location": "Mumbai, India (Remote)",
+      "bullets": [
+        "Led full-stack development of the company website by successfully implementing a CRM solution with React.js and Django, streamlining data collection and supporting ongoing ML model training for continuous improvement",
+        "Built Angular.js UI components with smooth interactions, dynamic loading, and SEO-optimized code.",
+        "Led migration of website from Shopify to Angular app in 2 months, resulting in 15% higher user engagement",
+        "Created reusable TypeScript modules and services with state management across the app using ngrx library.",
+        "Automated data collection and cleansing with python scripts for seamless ML model training, and reliabilit"
+      ]
+    }
+  ],
+
+  "projects": [
+    {
+      "title": "Hush-App",
+      "description": "Hush app is a simple and secured text sharing platform featuring Google auth, password protected paste with hashing, collision-safe hash link generation with features like view once, password protection, and no forwarding etc",
+      "tech": ["Angular", "Spring Boot", "Hibernate", "Google OAuth2", "PostgreSQL","Docker"],
+      "github": "https://github.com/narottamaswal/hush-app",
+      "link": "https://hush-app.onrender.com/",
+      "image": "assets/data/hushapp.png"
+    },
+    {
+      "title": "Saasific",
+      "description": "Saasific helps ecommerce brands connect their favorite SaaS applications without any coding knowledge. This no-code platform lets you integrate different software solutions to make your business operations more efficient and save valuable time.",
+      "tech": ["Java", "Angular", "Spring Boot", "Spring Security", "OAuth2", "RabbitMQ", "Firebase", "AWS"],
+      "link": "https://apps.shopify.com/partners/saasific1?utm_medium=referral&utm_source=pickyourapp-com&utm_campaign=saasific&utm_content=contact-developer-via-shopify-app-store",
+      "image": "assets/data/saasific.png"
+    },
+    {
+      "title": "Safe Media.ai",
+      "description": "Safemedia.ai is a social platform to share images and text based content built to enhance cyber safety and provide a excellent social platform experience for users with integration of multiple image based and text based models using to determine fake profiles, abusive content etc",
+      "tech": ["React Native", "Expo", "Django Rest Framework", "Firebase", "NLP","TensorFlow"],
+      "github": "https://github.com/narottamaswal/safemedia.ai",
+      "image": "assets/data/safemedia.png",
+      "link": "https://drive.google.com/file/d/1B5OYz2MLnfElOWNUKDfrdJCrhQuWtuwX/view?usp=sharing"
+    },
+    {
+      "title": "Jobify",
+      "description": "An online job portal that helps applicants to find jobs from multiple recruitment websites in a single page. Implemented different scraping and crawling algorithms using libraries present in Python.",
+      "tech": ["Python", "Django", "BeautifulSoup4", "Selenium","HTML","JavaScript", "SQL"],
+      "github": "https://github.com/narottamaswal/jobify",
+      "image": "https://placehold.co/600x280/0f172a/818cf8?text=Jobify+%E2%80%94+Jobs+Platform"
+    },
+    {
+      "title": "Mail Track",
+      "description": "MailTrack is a user friendly solution platform for marketers, sales, hiring teams and jobseekers that lets them track their emails and tell whether their emails were opened and how long the recipient spent reading them. It's a complete solution for email marketing and campaigns",
+      "tech": ["Vercel","Angular", "Spring Boot", "Hibernate", "Google OAuth2", "PostgreSQL","Docker"],
+      "github": "https://github.com/narottamaswal/mailtrack",
+      "link": "https://hush-app.onrender.com/",
+      "image": "assets/data/img.png"
+    },
+    {
+      "title": "Fomocode",
+      "description": "Fomocode is a chrome extension which notifies you when your peer have successfully submitted a leetcode problem encouraging you to do the same so you don't miss out of FOMO",
+      "tech": ["Javascript", "Spring Boot", "Spring Batch", "Firebase Events"],
+      "github": "https://github.com/narottamaswal/fomocode",
+      "image": "assets/data/fomocode.png"
+    }
+  ],
+
+  "achievements": [
+    {
+      "title": "IEEE Conference Research Paper",
+      "description": "Presented a research paper at the IEEE conference demonstrating different security risks associated with social media platforms.",
+      "year": ""
+    },
+    {
+      "title": "Finalist — Mastek 'Project Deep Blue' Hackathon",
+      "description": "Reached the finals of Mastek's Project Deep Blue hackathon with a successful submission of a working prototype.",
+      "year": ""
+    },
+    {
+      "title": "Multiple Performance Awards",
+      "description": "Recognised with multiple performance awards across roles for strong technical ownership, delivery impact, and process improvements.",
+      "year": ""
+    }
+  ],
+
+  "recommendations": [
+    {
+      "name": "Kamalakar Desai",
+      "title": "Engineering Director",
+      "company": "PayNearby",
+      "text": "Narottam joined as intern from the college in one of my teams in Jan 2022. Post the successful internship, he continued as a full time employee. During the period of almost 2.5 years, he delivered many projects with a great quality. He created the effective design proposals at a very early stage in his career. He picked up the product knowledge very quickly. He came up with the ideas for continuous improvement. He demonstrated exceptional ability to engage in advanced level technical discussions.",
+      "linkedinUrl": "https://linkedin.com/in/kdesai"
+    },
+    {
+      "name": "Nikhil Morde",
+      "title": "Product Manager",
+      "company": "HDFC Bank",
+      "linkedinUrl": "https://www.linkedin.com/in/nikhil-morde-7a4b1489",
+      "text": "Over the time we've worked together, Narottam has consistently demonstrated exceptional skills in crafting elegant and responsive user interfaces. His proficiency in modern technologies with deep understanding of frameworks has greatly contributed to our projects' success.\nBeyond technical skills, Narottam is a proactive team player, consistently bringing a positive attitude and creative problem-solving approach to every challenge. His commitment to staying updated with industry trends and best practices is truly commendable."
+    },
+    {
+      "name": "Pankaj Lande",
+      "title": "Senior Team Lead",
+      "company": "Citi Bank",
+      "text": "Narottam is a very hard-working person who can tackle any given problem with ease. We have worked together on several projects, and I found him a highly skilled and dedicated professional. His expertise in the field of Java & Microservices has helped in our internal projects immensely. He’s also an all-around great guy to work with! I highly recommend him to anyone looking for help on their team.",
+      "linkedinUrl": "https://www.linkedin.com/in/pankaj-lande-2525927a"
+    }
+  ],
+
+  "notes": [
+    {
+      "title": "A simple guide for publishing Angular Library with Jenkins CI/CD and NPM",
+      "date": "Jan 2026",
+      "summary": "An articulated implementation and walkthrough of my ideas around npm and jenkins cicd pipeline for angular libraries/packages using verdacio as a package registy",
+      "tags": ["cicd", "npm", "devops", "angular"],
+      "link": "https://medium.com/@narottamaswal/a-simple-guide-for-publishing-angular-library-with-jenkins-ci-cd-and-npm-fb1feb1b946b"
+    },
+    {
+      "title": "Different Ways to host an angular + spring boot full stack app in a docker container",
+      "date": "Feb 2026",
+      "summary": "In this article I'll explain different ways to deploy spring boot app with angular inside a docker container ",
+      "tags": ["docker", "distributed systems","spring boot","angular"],
+      "link": "https://medium.com/@narottamaswal/different-ways-to-host-an-angular-spring-boot-full-stack-app-in-a-docker-container-007720fe8ebf"
+    },
+    {
+      "title": "IEEE- Security Hazards of Social Media And Their Resolutions",
+      "date": "Jun 2022",
+      "summary": "This paper discusses the concept of Security and Privacy in social media platforms and social networking. First, a brief history and importance of social media will be addressed. Many Security risks associated with social media are explained and how they can affect users' privacy is presented.",
+      "tags": ["security", "machine learning","ieee","research"],
+      "link": "https://www.computer.org/csdl/proceedings-article/acm/2022/925200a048/1PpUURjG2nC"
+    }
+  ]
+}

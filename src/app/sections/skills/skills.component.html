@@ -1,0 +1,46 @@
+<section id="skills" class="alt-bg">
+  <div class="section-container">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card reveal" appScrollReveal *ngFor="let category of skills; let i = index" [class]="'skill-card-' + (i % 6)">
+        <h3 class="category-label">
+          <span class="category-icon">
+            <ng-container *ngIf="i % 6 === 0">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </ng-container>
+            <ng-container *ngIf="i % 6 === 1">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+            </ng-container>
+            <ng-container *ngIf="i % 6 === 2">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            </ng-container>
+            <ng-container *ngIf="i % 6 === 3">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </ng-container>
+            <ng-container *ngIf="i % 6 === 4">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </ng-container>
+            <ng-container *ngIf="i % 6 === 5">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </ng-container>
+          </span>
+          {{ category.category }}
+        </h3>
+        <div class="chip-list">
+          <span *ngFor="let item of category.items"
+                class="chip"
+                [class.chip-purple]="i % 6 === 0"
+                [class.chip-blue]="i % 6 === 1"
+                [class.chip-cyan]="i % 6 === 2"
+                [class.chip-green]="i % 6 === 3"
+                [class.chip-amber]="i % 6 === 4"
+                [class.chip-rose]="i % 6 === 5">
+            {{ item }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+

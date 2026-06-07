@@ -1,0 +1,54 @@
+<section id="achievements" class="alt-bg">
+  <div class="section-container">
+    <h2 class="section-title">Achievements</h2>
+    <div class="ach-list">
+      <div class="ach-item reveal" appScrollReveal *ngFor="let item of achievements; let i = index">
+        <div class="ach-icon" [class]="'ach-icon-' + (i % 5)">
+          <!-- Trophy -->
+          <ng-container *ngIf="i % 5 === 0">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M6 9H3.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h2.5a2.5 2.5 0 0 0 0-5H18"/>
+              <path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/>
+              <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/>
+              <path d="M18 2H6v7a6 6 0 0 0 12 0V2z"/>
+            </svg>
+          </ng-container>
+          <!-- Certificate -->
+          <ng-container *ngIf="i % 5 === 1">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/>
+            </svg>
+          </ng-container>
+          <!-- Code / Open source -->
+          <ng-container *ngIf="i % 5 === 2">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+            </svg>
+          </ng-container>
+          <!-- Star -->
+          <ng-container *ngIf="i % 5 === 3">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+          </ng-container>
+          <!-- Chart / ranking -->
+          <ng-container *ngIf="i % 5 === 4">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/>
+              <line x1="6" y1="20" x2="6" y2="14"/><line x1="2" y1="20" x2="22" y2="20"/>
+            </svg>
+          </ng-container>
+        </div>
+        <div class="ach-content">
+          <div class="ach-header">
+            <p class="ach-title">{{ item.title }}</p>
+            <span class="ach-year" *ngIf="item.year">{{ item.year }}</span>
+          </div>
+          <p class="ach-desc">{{ item.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
