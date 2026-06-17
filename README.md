@@ -1,4 +1,4 @@
-# Portfolio — Angular 18
+# Portfolio  — Angular 18
 
 One-page portfolio driven by a JSON API. Each section is a standalone component with its own `.html`, `.scss`, and `.ts` file.
 
