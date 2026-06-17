@@ -1,0 +1,54 @@
+<div class="resume-page">
+
+  <!-- Top toolbar -->
+  <div class="resume-toolbar">
+    <a routerLink="/" class="btn btn-outline btn-sm">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15 18 9 12 15 6"></polyline>
+      </svg>
+      Back to Portfolio
+    </a>
+
+    <span class="resume-toolbar__title">Resume</span>
+
+    <div class="resume-toolbar__actions">
+      <a [href]="rawUrl" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+          <polyline points="15 3 21 3 21 9"></polyline>
+          <line x1="10" y1="14" x2="21" y2="3"></line>
+        </svg>
+        Open in New Tab
+      </a>
+
+      <a [href]="rawUrl" download="Narottam-Aswal-Resume.pdf" class="btn btn-sm">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="7 10 12 15 17 10"></polyline>
+          <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+        Download PDF
+      </a>
+    </div>
+  </div>
+
+  <!-- PDF Viewer -->
+  <div class="resume-viewer">
+    <iframe
+      [src]="pdfUrl"
+      type="application/pdf"
+      title="Narottam Aswal – Resume"
+      allowfullscreen
+    ></iframe>
+
+    <!-- Fallback for browsers/devices that can't embed PDFs -->
+    <div class="resume-fallback">
+      <p>Your browser does not support inline PDF viewing.</p>
+      <a [href]="rawUrl" download="Narottam-Aswal-Resume.pdf" class="btn">
+        Download PDF Instead
+      </a>
+    </div>
+  </div>
+
+</div>
+

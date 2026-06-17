@@ -42,6 +42,21 @@
       text-decoration: none;
     }
 
+    &.nav-resume {
+      font-weight: 600;
+      color: var(--accent);
+      border: 1.5px solid var(--accent);
+      padding: 4px 12px;
+      border-radius: 4px;
+      transition: background 0.15s, color 0.15s;
+
+      &:hover {
+        background: var(--accent);
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+
     &.nav-cta {
       font-weight: 700;
       color: #fff;
