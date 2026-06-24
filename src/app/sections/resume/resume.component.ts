@@ -19,8 +19,8 @@ export class ResumeComponent implements OnInit {
   ngOnInit() {
     // Append timestamp to bust any browser/CDN cache
     const cacheBust = new Date().getTime();
-    // this.rawUrl = `assets/data/cv.pdf?v=${cacheBust}`;
-    this.pdfUrl = this.sanitizer.bypassSecurityTrustResourceUrl("https://drive.google.com/file/d/1mW0BHB8YATlbXfHqQZC2jTIxEbVUqsUx/view?usp=drive_link");
+    this.rawUrl = `assets/data/cv.pdf?v=${cacheBust}`;
+    this.pdfUrl = this.sanitizer.bypassSecurityTrustResourceUrl(this.rawUrl);
   }
 }
 
