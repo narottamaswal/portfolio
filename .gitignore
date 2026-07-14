@@ -24,5 +24,11 @@
 hs_err_pid*
 replay_pid*
 
+.angular
+/.angular
+/.idea
+.idea
+/dist
+/node_modules
 ./node_modules
 .class

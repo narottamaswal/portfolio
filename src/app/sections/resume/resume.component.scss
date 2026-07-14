@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  overflow: hidden;
 }
 
 .resume-page {
@@ -31,12 +30,6 @@
     letter-spacing: 0.02em;
     flex: 1;
     text-align: center;
-  }
-
-  &__actions {
-    display: flex;
-    gap: 10px;
-    align-items: center;
   }
 }
 
@@ -73,34 +66,17 @@
   }
 }
 
-/* ── PDF Viewer ── */
-.resume-viewer {
+/* ── Redirect message ── */
+.resume-redirect {
   flex: 1;
   display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  position: relative;
-
-  iframe {
-    flex: 1;
-    width: 100%;
-    height: 100%;
-    border: none;
-    background: #525659;
-  }
-}
-
-/* Fallback shown only when iframe fails */
-.resume-fallback {
-  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 16px;
-  padding: 40px;
   color: #fff;
   text-align: center;
-  background: #2b2b2b;
+  padding: 40px;
 
   p {
     font-size: 1rem;
@@ -108,7 +84,7 @@
   }
 }
 
-/* On very small screens, show fallback message below the iframe */
+/* On very small screens, adjust toolbar layout */
 @media (max-width: 600px) {
   .resume-toolbar {
     flex-wrap: wrap;
@@ -126,4 +102,3 @@
     }
   }
 }
-
