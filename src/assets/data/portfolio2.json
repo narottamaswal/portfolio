@@ -117,6 +117,13 @@
       "link": "https://drive.google.com/file/d/1B5OYz2MLnfElOWNUKDfrdJCrhQuWtuwX/view?usp=sharing"
     },
     {
+      "title": "windb",
+      "description": "Engineered a Redis-compatible key-value store in Java handling 10K+ ops/sec with sub-1ms median latency, using acustom hash table, TTL expiry, RESP protocol, and event loop-based I/O. Added HashMap, List, Set, and Sorted Set data structures with AOF write logging, log compaction, pub/sub messaging and write-ahead logging for crash recovery.",
+      "tech": ["Java", "Event Loop", "Multithreadng", "Networking", "Socket"],
+      "github": "https://github.com/narottamaswal/windb",
+      "image": "assets/data/windblogo.png"
+    },
+    {
       "title": "Jobify",
       "description": "An online job portal that helps applicants to find jobs from multiple recruitment websites in a single page. Implemented different scraping and crawling algorithms using libraries present in Python.",
       "tech": ["Python", "Django", "BeautifulSoup4", "Selenium","HTML","JavaScript", "SQL"],
@@ -130,13 +137,6 @@
       "github": "https://github.com/narottamaswal/mailtrack",
       "link": "https://hush-app.onrender.com/",
       "image": "assets/data/img.png"
-    },
-    {
-      "title": "Fomocode",
-      "description": "Fomocode is a chrome extension which notifies you when your peer have successfully submitted a leetcode problem encouraging you to do the same so you don't miss out of FOMO",
-      "tech": ["Javascript", "Spring Boot", "Spring Batch", "Firebase Events"],
-      "github": "https://github.com/narottamaswal/fomocode",
-      "image": "assets/data/fomocode.png"
     }
   ],
 
